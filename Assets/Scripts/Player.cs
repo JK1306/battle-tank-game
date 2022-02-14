@@ -4,7 +4,4 @@ using UnityEngine;
 
 public class Player : SingletonBehaviour<Player>
 {
-    public void display(){
-        Debug.Log("Hello World");
-    }
 }
