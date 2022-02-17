@@ -5,16 +5,12 @@ using UnityEngine;
 public class TankServices : MonoBehaviour
 {
     public TankView tankView;
-    public TankModel tankModel;
-    public TankController tankController;
+    public float movementSpeed;
+    private TankModel tankModel;
+    private TankController tankController;
     void Start()
     {
-        tankModel = new TankModel();
+        tankModel = new TankModel(movementSpeed);
         tankController = new TankController(tankView, tankModel);
-    }
-
-    void Update()
-    {
-        
     }
 }

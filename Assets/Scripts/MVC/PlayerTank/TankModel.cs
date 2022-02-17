@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class TankModel
 {
-    
+    public float movementSpeed;
+    public TankModel(float movementSpeed){
+        this.movementSpeed = movementSpeed;
+    }
 }
