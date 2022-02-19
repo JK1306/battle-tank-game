@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TankServices : MonoBehaviour
+public class TankServices : SingletonBehaviour<TankServices>
 {
-    public TankView tankView;
-    public float movementSpeed;
+    public PlayerTankMasterScriptableObjects playerTankMasterScriptableObjects;
+    public float movementSpeed, health;
     private TankModel tankModel;
     private TankController tankController;
     void Start()
     {
-        tankModel = new TankModel(movementSpeed);
-        tankController = new TankController(tankView, tankModel);
+        tankModel = new TankModel(
+            (PlayerTankScriptableObject) playerTankMasterScriptableObjects.playerTankScriptableObjects.selectRandom()
+        );
+        this.movementSpeed = tankModel.movementSpeed;
+        this.health = tankModel.health;
+        tankController = new TankController(playerTankMasterScriptableObjects.tankView, tankModel);
     }
 }
