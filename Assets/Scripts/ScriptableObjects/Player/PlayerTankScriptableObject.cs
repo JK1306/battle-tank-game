@@ -6,4 +6,5 @@ using UnityEngine;
 public class PlayerTankScriptableObject : ScriptableObject {
     public float health;
     public float movementSpeed;
+    public BulletType bulletType;
 }
