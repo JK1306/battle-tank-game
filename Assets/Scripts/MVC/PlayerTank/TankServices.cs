@@ -10,4 +10,8 @@ public class TankServices : SingletonBehaviour<TankServices>
     {
         tankController = new TankController(playerTankMasterScriptableObjects.tankView, joystick, (PlayerTankScriptableObject)playerTankMasterScriptableObjects.playerTankScriptableObjects.selectRandom());
     }
+
+    public void takeDamage(float damageTaken){
+        tankController.reduceHealth(damageTaken);
+    }
 }

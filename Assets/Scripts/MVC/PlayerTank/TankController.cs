@@ -22,7 +22,7 @@ public class TankController
 
     public void fireBullet(Transform bulletSpawnPosition)
     {
-        BulletService.Instance.fireBullet(tankModel.bulletType, bulletSpawnPosition);
+        BulletService.Instance.fireBullet(tankModel.bulletType, bulletSpawnPosition, BulletParent.Player);
     }
 
     public void playerRotation(float horizontal, float vertical){
@@ -31,10 +31,18 @@ public class TankController
             Vector3 tankRotation = new Vector3(
                     horizontal,
                     0f,
-                    vertical
+                    Mathf.Abs(vertical)
                 );
             tankRotation = tankRotation.normalized;
             this.tankView.transform.forward = tankRotation;
+        }
+    }
+
+    public void reduceHealth(float damageTaken){
+        if(tankModel.health - damageTaken <= 0){
+            GameObject.Destroy(this.tankView.gameObject);
+        }else{
+            tankModel.health -= damageTaken;
         }
     }
 }

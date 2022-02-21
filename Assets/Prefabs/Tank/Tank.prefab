@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 9033098303057678545}
   - component: {fileID: 6780180679881763613}
   - component: {fileID: 6055253907344047696}
-  - component: {fileID: 2476083164361100945}
   m_Layer: 0
   m_Name: TankFirePosition
   m_TagString: Untagged
@@ -27,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6053831363629157469}
   m_LocalRotation: {x: -0.13917309, y: 0, z: 0, w: 0.9902681}
-  m_LocalPosition: {x: -0.012, y: 1.386, z: 0.267}
+  m_LocalPosition: {x: -0.012, y: 1.338, z: 0.02}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 8837069808760297307}
@@ -80,19 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &2476083164361100945
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6053831363629157469}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8837069808760195761
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,6 +330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8837069808760297303}
   - component: {fileID: 8837069810272314393}
+  - component: {fileID: 3729098411508553455}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -379,6 +366,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletInstantiatePosition: {fileID: 9033098303057678545}
+--- !u!65 &3729098411508553455
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8837069808760195767}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.7765892, z: 1.5861707}
+  m_Center: {x: 0, y: 0.96809137, z: 0.0027279854}
 --- !u!1 &8837069808760195771
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,5 +14,9 @@ public class EnemyService : SingletonBehaviour<EnemyService>
             (EnemyScriptbleObject) enemyScriptableObjectsMaster.enemyScriptbleObjects.selectRandom()
         );
         enemyController = new EnemyController(enemyModel, enemyScriptableObjectsMaster.enemyView);
+    }
+
+    public void takeDamage(float damagePower){
+        enemyController.reduceHealth(damagePower);
     }
 }

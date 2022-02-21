@@ -15,4 +15,5 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 6221f2fbc7212d94cb9c069ee262d824, type: 2}
   bulletType: 0
   damage: 10
-  thrust: 30
+  thrust: 500
+  shellExplosion: {fileID: 19807510, guid: 89e78efe92dfe5a42837b392cdb0bf9e, type: 3}

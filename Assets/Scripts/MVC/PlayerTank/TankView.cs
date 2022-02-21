@@ -20,11 +20,8 @@ public class TankView : MonoBehaviour
             this.tankController.playerRotation(fixedJoystick.Horizontal, fixedJoystick.Vertical);
         }
 
-        if(CrossPlatformInputManager.GetButton("Fire")){
+        if(CrossPlatformInputManager.GetButtonDown("Fire")){
             tankController.fireBullet(bulletInstantiatePosition);
         }
-
-        Debug.Log("Horizontal : "+fixedJoystick.Horizontal);
-        Debug.Log("Vertical : "+fixedJoystick.Vertical);
     }
 }
