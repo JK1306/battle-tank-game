@@ -20,5 +20,6 @@ public class EnemyController
         }else{
             enemyModel.health -= damageTaken;
         }
+        PlatformManager.Instance.beginEndGame();
     }
 }
