@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a65d5d04e5f1f34698d40cf6a32f75d, type: 3}
   m_Name: DefaultEnemyScriptableObjectsMaster
   m_EditorClassIdentifier: 
-  enemyView: {fileID: 8876344494991530412, guid: 42ef6602b03b6194097cec4a26d17bca,
+  enemyView: {fileID: 7995567647417012431, guid: 41ec216dd11a7f247b212b2b7fbf4a05,
     type: 3}
   enemyScriptbleObjects:
   - {fileID: 11400000, guid: ad962fc18cd866e4a9845813a82f1765, type: 2}

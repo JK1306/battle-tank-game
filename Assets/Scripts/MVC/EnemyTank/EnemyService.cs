@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemyService : SingletonBehaviour<EnemyService>
 {
     public EnemyScriptableObjectsMaster enemyScriptableObjectsMaster;
+    public Transform[] patrolingPoints;
     EnemyModel enemyModel;
     EnemyController enemyController;
 
@@ -13,6 +14,7 @@ public class EnemyService : SingletonBehaviour<EnemyService>
         enemyModel = new EnemyModel(
             (EnemyScriptbleObject) enemyScriptableObjectsMaster.enemyScriptbleObjects.selectRandom()
         );
+        enemyModel.setPatrolingPoints(patrolingPoints);
         enemyController = new EnemyController(enemyModel, enemyScriptableObjectsMaster.enemyView);
     }
 
