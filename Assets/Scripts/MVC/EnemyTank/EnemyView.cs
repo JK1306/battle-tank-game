@@ -10,7 +10,7 @@ public class EnemyView : MonoBehaviour
                         TrackLeft,
                         TrackRight,
                         TankTurrent;
-                        
+    public Transform firingPosition;                        
     public float attackRadius = 3f;
     public float chaseRadius = 6f;
 
@@ -18,6 +18,7 @@ public class EnemyView : MonoBehaviour
     public EnemyIdleState enemyIdleState;
     public EnemyPatrollingState enemyPatrollingState;
     public EnemyChasingState enemyChasingState;
+    public EnemyAttackingState enemyAttackingState;
     public EnemyState currentState;
 
     public void applyMaterial(Material material){
@@ -33,6 +34,10 @@ public class EnemyView : MonoBehaviour
         StartCoroutine(startPatroling());
     }
 
+    public void fireShell(){
+        this.enemyController.fire(firingPosition);
+    }
+
     IEnumerator startPatroling(){
         yield return new WaitForSeconds(5f);
         changeState(enemyPatrollingState);
@@ -44,17 +49,40 @@ public class EnemyView : MonoBehaviour
     }
 
     void detectObjectNearBy(){
-        Collider[] colliders = Physics.OverlapSphere(transform.position, chaseRadius);
-        if(colliders.Length > 0){
-            for(int i=0; i<colliders.Length; i++){
-                if(colliders[i].GetComponent<TankView>() != null){
-                    changeState(enemyChasingState);
-                    radius = chaseRadius;
-                    break;
+        Collider[] attackColliders = Physics.OverlapSphere(transform.position, attackRadius);
+        if(attackColliders.Length > 0){
+            int i=0;
+            for(; i<attackColliders.Length; i++){
+                if(attackColliders[i].GetComponent<TankView>() != null){
+                    if(currentState != enemyAttackingState){
+                        Debug.Log("Changing State to Attack");
+                        changeState(enemyAttackingState);
+                        radius = attackRadius;
+                    }
+                    return;
                 }
             }
-        }else{
-            radius = 0;
+        }
+
+        Collider[] chasingColliders = Physics.OverlapSphere(transform.position, chaseRadius);
+        if(chasingColliders.Length > 0){
+            int i=0;
+            for(; i<chasingColliders.Length; i++){
+                if(chasingColliders[i].GetComponent<TankView>() != null){
+                    if(currentState != enemyChasingState){
+                        Debug.Log("Changing State to Chasing");
+                        changeState(enemyChasingState);
+                        radius = chaseRadius;                        
+                    }
+                    return;
+                }
+            }
+        }
+        
+        radius = 0;
+        if(currentState != enemyIdleState && currentState != enemyPatrollingState){
+            Debug.Log("Changing State to Patrolling State");
+            changeState(enemyPatrollingState);
         }
     }
 

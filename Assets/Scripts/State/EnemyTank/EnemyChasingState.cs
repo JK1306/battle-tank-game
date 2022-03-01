@@ -15,7 +15,6 @@ public class EnemyChasingState : EnemyState
     }
 
     void tankMovement(){
-        Debug.Log("Came to Tank Movement..");
         if(Vector3.Distance(transform.position, target.position) > 4f){
             transform.position = Vector3.MoveTowards(transform.position, target.position, this.enemyModel.movementSpeed * Time.deltaTime);
         }
@@ -23,17 +22,13 @@ public class EnemyChasingState : EnemyState
 
     void detectObjectNearBy(){
         Collider[] colliders = Physics.OverlapSphere(transform.position, this.detectRadius);
-        Debug.Log("Collider Length : "+colliders.Length);
         if(colliders.Length > 0){
             for(int i=0; i<colliders.Length; i++){
                 if(colliders[i].GetComponent<TankView>() != null){
                     target = colliders[i].transform;
-                    Debug.Log("Contact With Player");
                     break;
                 }
             }
-        }else{
-
         }
     }
 

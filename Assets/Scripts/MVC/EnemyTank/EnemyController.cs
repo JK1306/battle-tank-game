@@ -24,6 +24,10 @@ public class EnemyController
         }
     }
 
+    public void fire(Transform firePosition){
+        BulletService.Instance.fireBullet(enemyModel.bulletType, firePosition, BulletParent.Enemy);
+    }
+
     public EnemyModel getModel(){
         return this.enemyModel;
     }

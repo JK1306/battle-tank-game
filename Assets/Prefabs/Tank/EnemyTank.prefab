@@ -334,6 +334,7 @@ GameObject:
   - component: {fileID: 3984469621071465088}
   - component: {fileID: 5819465309585923689}
   - component: {fileID: 3914888704279704221}
+  - component: {fileID: 4910813188776001825}
   m_Layer: 0
   m_Name: EnemyTank
   m_TagString: Untagged
@@ -385,11 +386,13 @@ MonoBehaviour:
   TrackLeft: {fileID: 8837069808758003137}
   TrackRight: {fileID: 8837069808758003151}
   TankTurrent: {fileID: 8837069808758003141}
+  firingPosition: {fileID: 9033098303057678545}
   attackRadius: 4
   chaseRadius: 7
   enemyIdleState: {fileID: 3984469621071465088}
   enemyPatrollingState: {fileID: 5819465309585923689}
   enemyChasingState: {fileID: 3914888704279704221}
+  enemyAttackingState: {fileID: 4910813188776001825}
   currentState: {fileID: 3984469621071465088}
 --- !u!114 &3984469621071465088
 MonoBehaviour:
@@ -425,6 +428,18 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ebc2b5e8fe95eeb45aab8b643b517af9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4910813188776001825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8837069808760195767}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e7c1dd61d32f94e9ba0ff89286c6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8837069808760195771

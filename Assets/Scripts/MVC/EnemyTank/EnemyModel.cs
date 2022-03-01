@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class EnemyModel
 {
-    public float movementSpeed;
     public float health;
+    public float movementSpeed;
+    public BulletType bulletType;
     public Material applyMaterial;
     public Transform[] patrolingPoints;
 
@@ -13,6 +14,7 @@ public class EnemyModel
         this.movementSpeed = enemyScriptbleObject.movementSpeed;
         this.health = enemyScriptbleObject.health;
         this.applyMaterial = enemyScriptbleObject.appliedMaterial;
+        this.bulletType = enemyScriptbleObject.bulletType;
     }
 
     public void setPatrolingPoints(Transform[] patrolingPoints){
