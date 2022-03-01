@@ -1,0 +1,1376 @@
+fileFormatVersion: 2
+guid: 6065dd8cad6ec1d4a98786ee1656a1e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5464706853832135294
+    second: HUD_BUTTONS_1_0
+  - first:
+      213: 7627071623639191388
+    second: HUD_BUTTONS_1_1
+  - first:
+      213: -1625315590650339691
+    second: HUD_BUTTONS_1_2
+  - first:
+      213: 5129775016172884246
+    second: HUD_BUTTONS_1_3
+  - first:
+      213: -8797899010259682605
+    second: HUD_BUTTONS_1_4
+  - first:
+      213: 2400722143540981220
+    second: HUD_BUTTONS_1_5
+  - first:
+      213: 4766121926147193101
+    second: HUD_BUTTONS_1_6
+  - first:
+      213: 4947999965024347967
+    second: HUD_BUTTONS_1_7
+  - first:
+      213: 7730834604461033020
+    second: HUD_BUTTONS_1_8
+  - first:
+      213: -413080334631098984
+    second: HUD_BUTTONS_1_9
+  - first:
+      213: -536313429351472433
+    second: HUD_BUTTONS_1_10
+  - first:
+      213: 573796291640954455
+    second: HUD_BUTTONS_1_11
+  - first:
+      213: 4633731557068068227
+    second: HUD_BUTTONS_1_12
+  - first:
+      213: -3797481418752321899
+    second: HUD_BUTTONS_1_13
+  - first:
+      213: -2405358855231944014
+    second: HUD_BUTTONS_1_14
+  - first:
+      213: -2497992705585022738
+    second: HUD_BUTTONS_1_15
+  - first:
+      213: -213215837578441535
+    second: HUD_BUTTONS_1_16
+  - first:
+      213: 7634183770697718053
+    second: HUD_BUTTONS_1_17
+  - first:
+      213: 4519259585606371376
+    second: HUD_BUTTONS_1_18
+  - first:
+      213: -3991227618952973591
+    second: HUD_BUTTONS_1_19
+  - first:
+      213: -3289310717616097671
+    second: HUD_BUTTONS_1_20
+  - first:
+      213: -635198434350443299
+    second: HUD_BUTTONS_1_21
+  - first:
+      213: -3455353837121021685
+    second: HUD_BUTTONS_1_22
+  - first:
+      213: 3016637730740092512
+    second: HUD_BUTTONS_1_23
+  - first:
+      213: -9084541466768611956
+    second: HUD_BUTTONS_1_24
+  - first:
+      213: 4349488199923792781
+    second: HUD_BUTTONS_1_25
+  - first:
+      213: 264424221677882195
+    second: HUD_BUTTONS_1_26
+  - first:
+      213: -4351937762321363973
+    second: HUD_BUTTONS_1_27
+  - first:
+      213: -132651202520893679
+    second: HUD_BUTTONS_1_28
+  - first:
+      213: -3673739058310978188
+    second: HUD_BUTTONS_1_29
+  - first:
+      213: -8511438716394604362
+    second: HUD_BUTTONS_1_30
+  - first:
+      213: 5205280860096389598
+    second: HUD_BUTTONS_1_31
+  - first:
+      213: 8058385008014678586
+    second: HUD_BUTTONS_1_32
+  - first:
+      213: -1487420289175209785
+    second: HUD_BUTTONS_1_33
+  - first:
+      213: -2320524705301342676
+    second: HUD_BUTTONS_1_34
+  - first:
+      213: 7977303793127886995
+    second: HUD_BUTTONS_1_35
+  - first:
+      213: -1919062838147267022
+    second: HUD_BUTTONS_1_36
+  - first:
+      213: -407115645394405851
+    second: HUD_BUTTONS_1_37
+  - first:
+      213: -437900952493980550
+    second: HUD_BUTTONS_1_38
+  - first:
+      213: 4421760950229780789
+    second: HUD_BUTTONS_1_39
+  - first:
+      213: 6035920586391863598
+    second: HUD_BUTTONS_1_40
+  - first:
+      213: 8110008943235997548
+    second: HUD_BUTTONS_1_41
+  - first:
+      213: -8481870323628285302
+    second: HUD_BUTTONS_1_42
+  - first:
+      213: 9132091407317139933
+    second: HUD_BUTTONS_1_43
+  - first:
+      213: 2264527943171205269
+    second: HUD_BUTTONS_1_44
+  - first:
+      213: 536867111826016998
+    second: HUD_BUTTONS_1_45
+  - first:
+      213: -810390733941923229
+    second: HUD_BUTTONS_1_46
+  - first:
+      213: -3318442464961866343
+    second: HUD_BUTTONS_1_47
+  - first:
+      213: 2701107979088118827
+    second: HUD_BUTTONS_1_48
+  - first:
+      213: 8858064457793220128
+    second: HUD_BUTTONS_1_49
+  - first:
+      213: 2403019746931026435
+    second: HUD_BUTTONS_1_50
+  - first:
+      213: 4022101340344333588
+    second: HUD_BUTTONS_1_51
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 896
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d61b7d1167924b0800000000000000
+      internalID: -5464706853832135294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 896
+        width: 87
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5fc9735b3dc8d960800000000000000
+      internalID: 7627071623639191388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_2
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 896
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ed163e418b179e0800000000000000
+      internalID: -1625315590650339691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_3
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 896
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61198a0d23f903740800000000000000
+      internalID: 5129775016172884246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_4
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 896
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3daf5b3a67597e580800000000000000
+      internalID: -8797899010259682605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_5
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 896
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edac2ae114115120800000000000000
+      internalID: 2400722143540981220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_6
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 896
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09343cc3aaa42240800000000000000
+      internalID: 4766121926147193101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_7
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 896
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37ebe7a0c3daa440800000000000000
+      internalID: 4947999965024347967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 775
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c368230fc11794b60800000000000000
+      internalID: 7730834604461033020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_9
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 775
+        width: 87
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8952d9ecf91744af0800000000000000
+      internalID: -413080334631098984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_10
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 775
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2eb3b07c1ae88f0800000000000000
+      internalID: -536313429351472433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_11
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 775
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e02b8efa886f700800000000000000
+      internalID: 573796291640954455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_12
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 775
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3855f83fc425e4040800000000000000
+      internalID: 4633731557068068227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_13
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 775
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5961f1205c2ac4bc0800000000000000
+      internalID: -3797481418752321899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_14
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 775
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba4f848dd27e9ed0800000000000000
+      internalID: -2405358855231944014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_15
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 775
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee876148ed8555dd0800000000000000
+      internalID: -2497992705585022738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_16
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 653
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc46ac43518a0df0800000000000000
+      internalID: -213215837578441535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_17
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 653
+        width: 87
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5295d7a11b112f960800000000000000
+      internalID: 7634183770697718053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_18
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 653
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038c8d726a2a7be30800000000000000
+      internalID: 4519259585606371376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_19
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 653
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e2749280af4c98c0800000000000000
+      internalID: -3991227618952973591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_20
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 653
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9767b9074550a52d0800000000000000
+      internalID: -3289310717616097671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_21
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 653
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd458aea3625f27f0800000000000000
+      internalID: -635198434350443299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_22
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 531
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b095e1d0efd1c00d0800000000000000
+      internalID: -3455353837121021685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_23
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 531
+        width: 87
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ebdc488004dd920800000000000000
+      internalID: 3016637730740092512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_24
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 531
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8563fdfaa93de180800000000000000
+      internalID: -9084541466768611956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_25
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 531
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bf537297c7c5c30800000000000000
+      internalID: 4349488199923792781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_26
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 410
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b8e1bbd6c6ba300800000000000000
+      internalID: 264424221677882195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_27
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 410
+        width: 87
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb0a38a9afca93c0800000000000000
+      internalID: -4351937762321363973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_28
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 410
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117b6b22f6ab82ef0800000000000000
+      internalID: -132651202520893679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_29
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 409
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47565ef6ac1440dc0800000000000000
+      internalID: -3673739058310978188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_30
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 410
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8facd359b41e980800000000000000
+      internalID: -8511438716394604362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_31
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 410
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed16f2e0d5fdc3840800000000000000
+      internalID: 5205280860096389598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_32
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 410
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a5c0a387225df60800000000000000
+      internalID: 8058385008014678586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_33
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 409
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8b000b02f9b5be0800000000000000
+      internalID: -1487420289175209785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_34
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 288
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26deff3317dbcfd0800000000000000
+      internalID: -2320524705301342676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_35
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 288
+        width: 87
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39093c6c88315be60800000000000000
+      internalID: 7977303793127886995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_36
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 288
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236449e248e1e55e0800000000000000
+      internalID: -1919062838147267022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_37
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 288
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52633cd3a72a95af0800000000000000
+      internalID: -407115645394405851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_38
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 288
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a748acf57634ce9f0800000000000000
+      internalID: -437900952493980550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_39
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 288
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539c32028204d5d30800000000000000
+      internalID: 4421760950229780789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_40
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 288
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21ca5c2bc5e3c350800000000000000
+      internalID: 6035920586391863598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_41
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 288
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f92da4a2a8c8070800000000000000
+      internalID: 8110008943235997548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_42
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 167
+        width: 88
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82653921e75a4a80800000000000000
+      internalID: -8481870323628285302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_43
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 167
+        width: 87
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1098540c4bbbe70800000000000000
+      internalID: 9132091407317139933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_44
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 167
+        width: 88
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5986aa49a283d6f10800000000000000
+      internalID: 2264527943171205269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_45
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 167
+        width: 88
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eacaf33bc5537700800000000000000
+      internalID: 536867111826016998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_46
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 167
+        width: 88
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362af1ecbe9e0c4f0800000000000000
+      internalID: -810390733941923229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_47
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 167
+        width: 88
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9955064f82682f1d0800000000000000
+      internalID: -3318442464961866343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_48
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 45
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24458955634c7520800000000000000
+      internalID: 2701107979088118827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_49
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 45
+        width: 87
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e274c31ba2eea70800000000000000
+      internalID: 8858064457793220128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_50
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 45
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30aa2146abd395120800000000000000
+      internalID: 2403019746931026435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_BUTTONS_1_51
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 45
+        width: 88
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415b8d9ebdf51d730800000000000000
+      internalID: 4022101340344333588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
