@@ -6,11 +6,14 @@ public class BulletController
 {
     BulletModel bulletModel;
     BulletView bulletView;
+    List<ParticleSystem> explosion;
+    int explosionIndex=0;
     public BulletController(BulletView bulletView, BulletScriptableObject bulletScriptableObject, Transform instantiatePosition, BulletParent bulletParent){
         this.bulletModel = new BulletModel(bulletScriptableObject, bulletParent);
         this.bulletView = GameObject.Instantiate<BulletView>(bulletView, instantiatePosition.position, instantiatePosition.rotation);
         this.bulletView.setupController(this);
         this.bulletView.applyMaterial(bulletModel.materialToApply);
+        explosion = new List<ParticleSystem>();
     }
 
     public void triggerBullet(){
@@ -37,11 +40,20 @@ public class BulletController
     }
 
     public void playBulletShellExplosion(Transform particalSpawnPosition){
-        ParticleSystem explosion = GameObject.Instantiate(bulletModel.shellExplosionPartical, particalSpawnPosition.position, Quaternion.identity);
-        explosion.Play();
+        this.explosion.Add(
+            GameObject.Instantiate(bulletModel.shellExplosionPartical, particalSpawnPosition.position, Quaternion.identity)
+        );
+        this.explosion[explosionIndex].Play();
+        explosionIndex++;
     }
 
     public void destroyShell(){
         GameObject.Destroy(this.bulletView.gameObject);
+        Debug.Log("Total Partical : "+explosionIndex);
+        for(int i=explosionIndex-1; i>=0; i--){
+            Debug.Log("Index : "+i);
+            GameObject.Destroy(this.explosion[i].gameObject);
+            this.explosion.RemoveAt(i);
+        }
     }
 }
