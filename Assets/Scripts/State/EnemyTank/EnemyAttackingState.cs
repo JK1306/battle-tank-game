@@ -6,8 +6,9 @@ public class EnemyAttackingState : EnemyState
     Transform target;
     float radius;
     EnemyView enemyView;
-    float waitTime = 10f;
+    float waitTime = 7f;
     float cloak=0f;
+    bool attackStateEnabled = false;
 
     public override void OnEnterState(EnemyModel enemyModel)
     {
@@ -23,9 +24,10 @@ public class EnemyAttackingState : EnemyState
     }
 
     void firePlayer(){
-        if(cloak >= waitTime){
+        if(cloak >= waitTime || !attackStateEnabled){
             enemyView.fireShell();
             cloak = 0f;
+            attackStateEnabled = true;
         }
         cloak += 0.1f;
         // StartCoroutine(spawnBullet());
