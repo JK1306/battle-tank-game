@@ -1,16 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
-public class TankServices : MonoBehaviour
+public class TankServices : SingletonBehaviour<TankServices>
 {
-    public TankView tankView;
-    public float movementSpeed;
-    private TankModel tankModel;
+    public PlayerTankMasterScriptableObjects playerTankMasterScriptableObjects;
+    public Joystick joystick;
     private TankController tankController;
     void Start()
     {
-        tankModel = new TankModel(movementSpeed);
-        tankController = new TankController(tankView, tankModel);
+        tankController = new TankController(playerTankMasterScriptableObjects.tankView, joystick, (PlayerTankScriptableObject)playerTankMasterScriptableObjects.playerTankScriptableObjects.selectRandom());
+    }
+
+    public void takeDamage(float damageTaken){
+        tankController.reduceHealth(damageTaken);
     }
 }
