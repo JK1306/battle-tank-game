@@ -4,5 +4,6 @@
 public class EnemyScriptbleObject : ScriptableObject {
     public float movementSpeed;
     public float health;
+    public BulletType bulletType;
     public Material appliedMaterial;
 }
