@@ -17,6 +17,7 @@ public class EnemyController
     public void reduceHealth(float damageTaken){
         if(enemyModel.health - damageTaken <= 0){
             GameObject.Destroy(this.enemyView.gameObject);
+            EnemyService.Instance.notifyOnEnemyDeath();
             PlatformManager.Instance.beginEndGame();
         }else{
             enemyModel.health -= damageTaken;

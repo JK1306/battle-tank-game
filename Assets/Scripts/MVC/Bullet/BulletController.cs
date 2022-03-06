@@ -49,9 +49,9 @@ public class BulletController
 
     public void destroyShell(){
         GameObject.Destroy(this.bulletView.gameObject);
-        Debug.Log("Total Partical : "+explosionIndex);
+        // Debug.Log("Total Partical : "+explosionIndex);
         for(int i=explosionIndex-1; i>=0; i--){
-            Debug.Log("Index : "+i);
+            // Debug.Log("Index : "+i);
             GameObject.Destroy(this.explosion[i].gameObject);
             this.explosion.RemoveAt(i);
         }
