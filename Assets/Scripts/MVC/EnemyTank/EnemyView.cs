@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyView : MonoBehaviour
 {
     EnemyController enemyController;
+    EnemyModel enemyModel;
     float radius=0;
     public MeshRenderer Chassis,
                         TrackLeft,
@@ -28,9 +29,11 @@ public class EnemyView : MonoBehaviour
         TankTurrent.material = material;
     }
 
-    public void setupController(EnemyController enemyController){
+    public void setupController(EnemyController enemyController, EnemyModel enemyModel){
         this.enemyController = enemyController;
-        currentState.OnEnterState(this.enemyController.getModel());
+        this.enemyModel = enemyModel;
+        applyMaterial(enemyModel.applyMaterial);
+        currentState.OnEnterState(this.enemyModel);
         StartCoroutine(startPatroling());
     }
 
@@ -89,7 +92,7 @@ public class EnemyView : MonoBehaviour
     public void changeState(EnemyState nxtState){
         currentState.OnExitState();
         currentState = nxtState;
-        currentState.OnEnterState(enemyController.getModel());
+        currentState.OnEnterState(this.enemyModel);
     }
 
     private void OnDrawGizmosSelected() {

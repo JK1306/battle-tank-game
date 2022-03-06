@@ -11,8 +11,7 @@ public class EnemyController
     {
         this.enemyModel = enemyModel;
         this.enemyView = GameObject.Instantiate<EnemyView>(enemyView);
-        this.enemyView.setupController(this);
-        this.enemyView.applyMaterial(this.enemyModel.applyMaterial);
+        this.enemyView.setupController(this, this.enemyModel);
     }
 
     public void reduceHealth(float damageTaken){
@@ -26,9 +25,5 @@ public class EnemyController
 
     public void fire(Transform firePosition){
         BulletService.Instance.fireBullet(enemyModel.bulletType, firePosition, BulletParent.Enemy);
-    }
-
-    public EnemyModel getModel(){
-        return this.enemyModel;
     }
 }
