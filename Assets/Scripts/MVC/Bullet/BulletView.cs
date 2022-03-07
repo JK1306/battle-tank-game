@@ -26,13 +26,4 @@ public class BulletView : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         bulletController.manageCollision(other);
     }
-
-    public void destroyShell(){
-        StartCoroutine(playDestroy());
-    }
-    IEnumerator playDestroy(){
-        this.bulletController.playBulletShellExplosion(transform);
-        yield return new WaitForSeconds(0.3f);
-        this.bulletController.destroyShell();
-    }
 }

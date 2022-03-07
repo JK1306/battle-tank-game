@@ -7,9 +7,11 @@ public class TankServices : SingletonBehaviour<TankServices>
     public PlayerTankMasterScriptableObjects playerTankMasterScriptableObjects;
     public Joystick joystick;
     private TankController tankController;
-    public event Action<float> bulletFireNotification;
-    public event Action playerDeathNotification;
-    public event Action<float> playerTravelNotification; 
+    // public Action<float> bulletFireNotification;
+    public delegate void BulletFireNotification(float noOfBullets);
+    public BulletFireNotification bulletFireNotification;
+    public Action playerDeathNotification;
+    public Action<float> playerTravelNotification; 
     void Start()
     {
         tankController = new TankController(playerTankMasterScriptableObjects.tankView, joystick, (PlayerTankScriptableObject)playerTankMasterScriptableObjects.playerTankScriptableObjects.selectRandom());
