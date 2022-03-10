@@ -5,8 +5,10 @@ public class EnemyPatrollingState : EnemyState
     Transform targetPosition;
     Vector3 tankMove;
 
-    public override void OnEnterState(EnemyModel enemyModel) {
-        base.OnEnterState(enemyModel);
+    public EnemyPatrollingState(EnemyModel enemyModel, EnemyView enemyView) : base(enemyModel, enemyView){}
+
+    public override void OnEnterState() {
+        base.OnEnterState();
         targetPosition = this.enemyModel.patrolingPoints.selectRandomArr<Transform>();
     }
     
@@ -16,15 +18,15 @@ public class EnemyPatrollingState : EnemyState
     }
 
     void tankMovement(){
-        tankMove = Vector3.MoveTowards(transform.position, targetPosition.position, this.enemyModel.movementSpeed * Time.deltaTime);
-        if(Vector3.Distance(transform.position, targetPosition.position) > 1f){
-            transform.position = tankMove;
+        tankMove = Vector3.MoveTowards(this.enemyView.transform.position, targetPosition.position, this.enemyModel.movementSpeed * Time.deltaTime);
+        if(Vector3.Distance(this.enemyView.transform.position, targetPosition.position) > 1f){
+            this.enemyView.transform.position = tankMove;
         }else{
             targetPosition = this.enemyModel.patrolingPoints.selectRandomArr<Transform>();
         }
     }
 
     void tankRotation(){
-        transform.LookAt(targetPosition);
+        this.enemyView.transform.LookAt(targetPosition);
     }
 }

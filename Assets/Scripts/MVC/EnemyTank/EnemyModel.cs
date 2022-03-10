@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyModel
+public class EnemyModel : Model
 {
     public float health;
     public float movementSpeed;
