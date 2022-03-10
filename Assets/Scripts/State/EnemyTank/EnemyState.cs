@@ -7,15 +7,12 @@ public class EnemyState
 {
     public EnemyModel enemyModel;
     public EnemyView enemyView;
-    public EnemyStateType enemyState;
 
     public EnemyState(EnemyModel enemyModel, EnemyView enemyView){
         this.enemyModel = enemyModel;
         this.enemyView = enemyView;
     }
-    public virtual void OnEnterState()
-    {
-    }
+    public virtual void OnEnterState(){}
 
     public virtual void OnExitState(){}
 
