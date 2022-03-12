@@ -2,18 +2,14 @@
 
 public class TankController
 {
-    public float bulletFireCount { get; private set; }
     public TankModel tankModel;
     public TankView tankView;
     float distance;
-    bool distanceNotified;
     public TankController(TankView tankView, Joystick joystick, PlayerTankScriptableObject playerTankScriptableObject){
         this.tankModel = new TankModel(playerTankScriptableObject);
         this.tankView = GameObject.Instantiate<TankView>(tankView);
         this.tankView.setupJoyStick(joystick);
         this.tankView.setTankController(this);
-        bulletFireCount = 0;
-        distanceNotified = false;
     }
 
     public void tankMovement(float horizontal, float vertical){
@@ -27,11 +23,8 @@ public class TankController
 
     public void fireBullet(Transform bulletSpawnPosition)
     {
-        bulletFireCount++;
         BulletService.Instance.fireBullet(tankModel.bulletType, bulletSpawnPosition, BulletParent.Player);
-        if(bulletFireCount == 10 || bulletFireCount == 25 || bulletFireCount == 50){
-            TankServices.Instance.notifyBulletFireAchievement(bulletFireCount);
-        }
+        TankServices.Instance.notifyBulletFireAchievement();
     }
 
     public void playerRotation(float horizontal, float vertical){
@@ -59,9 +52,6 @@ public class TankController
 
     public void calculateDistance(Vector3 initialPosition, Vector3 currentPosition){
         distance = Vector3.Distance(initialPosition, currentPosition);
-        if(distance >= 5f && !distanceNotified){
-            TankServices.Instance.notifyOnTraveled5m(distance);
-            distanceNotified = true;
-        }
+        TankServices.Instance.notifyOnTraveled5m(distance);
     }
 }

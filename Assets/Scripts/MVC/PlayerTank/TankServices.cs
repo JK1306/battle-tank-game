@@ -7,9 +7,7 @@ public class TankServices : SingletonBehaviour<TankServices>
     public PlayerTankMasterScriptableObjects playerTankMasterScriptableObjects;
     public Joystick joystick;
     private TankController tankController;
-    // public Action<float> bulletFireNotification;
-    public delegate void BulletFireNotification(float noOfBullets);
-    public BulletFireNotification bulletFireNotification;
+    public event Action bulletFireNotification;
     public Action playerDeathNotification;
     public Action<float> playerTravelNotification; 
     void Start()
@@ -21,8 +19,8 @@ public class TankServices : SingletonBehaviour<TankServices>
         tankController.reduceHealth(damageTaken);
     }
 
-    public void notifyBulletFireAchievement(float noOfBullets){
-        bulletFireNotification?.Invoke(noOfBullets);        
+    public void notifyBulletFireAchievement(){
+        bulletFireNotification?.Invoke();        
     }
 
     public void notifyOnPlayerDeath(){

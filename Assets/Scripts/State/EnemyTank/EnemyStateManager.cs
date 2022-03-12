@@ -35,7 +35,7 @@ public class EnemyStateManager : MonoBehaviour
         switch(nextState){
             case EnemyStateType.Idel:
             {
-                Debug.Log("Change state to Enemy Idel");
+                // Debug.Log("Change state to Enemy Idel");
                 currentStateType = EnemyStateType.Idel;
                 currentState = new EnemyIdleState(enemyModel, enemyView);
                 break;
@@ -43,7 +43,7 @@ public class EnemyStateManager : MonoBehaviour
 
             case EnemyStateType.Patroling:
             {
-                Debug.Log("Change state to Enemy Patrol");
+                // Debug.Log("Change state to Enemy Patrol");
                 currentStateType = EnemyStateType.Patroling;
                 currentState = new EnemyPatrollingState(enemyModel, enemyView);
                 break;
@@ -51,7 +51,7 @@ public class EnemyStateManager : MonoBehaviour
 
             case EnemyStateType.Chasing:
             {
-                Debug.Log("Change state to Enemy Chasing");
+                // Debug.Log("Change state to Enemy Chasing");
                 currentStateType = EnemyStateType.Chasing;
                 currentState = new EnemyChasingState(enemyModel, enemyView);
                 break;
@@ -59,7 +59,7 @@ public class EnemyStateManager : MonoBehaviour
 
             case EnemyStateType.Attacking:
             {
-                Debug.Log("Change state to Enemy Attacking");
+                // Debug.Log("Change state to Enemy Attacking");
                 currentStateType = EnemyStateType.Attacking;
                 currentState = new EnemyAttackingState(enemyModel, enemyView);
                 break;
