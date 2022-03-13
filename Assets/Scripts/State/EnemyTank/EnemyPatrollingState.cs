@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 
+// [System.Serializable]
 public class EnemyPatrollingState : EnemyState
 {
     Transform targetPosition;
     Vector3 tankMove;
 
-    public EnemyPatrollingState(EnemyModel enemyModel, EnemyView enemyView) : base(enemyModel, enemyView){}
+    public EnemyPatrollingState(EnemyModel enemyModel, EnemyView enemyView) : base(enemyModel, enemyView){
+        this.stateType = EnemyStateType.Patroling;
+    }
 
     public override void OnEnterState() {
         base.OnEnterState();

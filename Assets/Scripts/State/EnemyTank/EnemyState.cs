@@ -7,6 +7,8 @@ public class EnemyState
 {
     public EnemyModel enemyModel;
     public EnemyView enemyView;
+    [SerializeField]
+    public EnemyStateType stateType {get; protected set;}
 
     public EnemyState(EnemyModel enemyModel, EnemyView enemyView){
         this.enemyModel = enemyModel;

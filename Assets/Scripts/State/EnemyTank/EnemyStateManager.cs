@@ -5,20 +5,30 @@ public class EnemyStateManager : MonoBehaviour
 {
     EnemyView enemyView;
     EnemyModel enemyModel;
+    [SerializeReference]
     EnemyState currentState;
-    public EnemyStateType currentStateType;
+    // public EnemyStateType currentStateType;
     public float attackRadius = 3f;
     public float chaseRadius = 6f;
     float radius=0;
+    EnemyIdleState enemyIdleState;
+    EnemyPatrollingState enemyPatrollingState;
+    EnemyChasingState enemyChasingState;
+    EnemyAttackingState enemyAttackingState;
 
     private void Start() {
         enemyView = GetComponent<EnemyView>();
         enemyModel = enemyView.enemyModel;
 
-        if(currentStateType == EnemyStateType.None){
-            currentStateType = EnemyStateType.Idel;
+        enemyIdleState = new EnemyIdleState(enemyModel, enemyView);
+        enemyPatrollingState = new EnemyPatrollingState(enemyModel, enemyView);
+        enemyChasingState = new EnemyChasingState(enemyModel, enemyView);
+        enemyAttackingState = new EnemyAttackingState(enemyModel, enemyView);
+
+        if(currentState == null){
+            Debug.Log("Enter Idle state");
+            currentState = enemyIdleState;
         }
-        changeState(currentStateType);
         currentState.OnEnterState();
         StartCoroutine(startPatroling());
     }
@@ -28,40 +38,36 @@ public class EnemyStateManager : MonoBehaviour
         currentState.Tick(radius);
     }
 
-    public void changeState(EnemyStateType nextState){
+    public void changeState(EnemyState nextState){
         if(currentState != null){
             currentState.OnExitState();
         }
-        switch(nextState){
+        switch(nextState.stateType){
             case EnemyStateType.Idel:
             {
-                // Debug.Log("Change state to Enemy Idel");
-                currentStateType = EnemyStateType.Idel;
-                currentState = new EnemyIdleState(enemyModel, enemyView);
+                Debug.Log("Change state to Enemy Idel");
+                currentState = enemyIdleState;
                 break;
             }
 
             case EnemyStateType.Patroling:
             {
-                // Debug.Log("Change state to Enemy Patrol");
-                currentStateType = EnemyStateType.Patroling;
-                currentState = new EnemyPatrollingState(enemyModel, enemyView);
+                Debug.Log("Change state to Enemy Patrol");
+                currentState = enemyPatrollingState;
                 break;
             }
 
             case EnemyStateType.Chasing:
             {
-                // Debug.Log("Change state to Enemy Chasing");
-                currentStateType = EnemyStateType.Chasing;
-                currentState = new EnemyChasingState(enemyModel, enemyView);
+                Debug.Log("Change state to Enemy Chasing");
+                currentState = enemyChasingState;
                 break;
             }
 
             case EnemyStateType.Attacking:
             {
-                // Debug.Log("Change state to Enemy Attacking");
-                currentStateType = EnemyStateType.Attacking;
-                currentState = new EnemyAttackingState(enemyModel, enemyView);
+                Debug.Log("Change state to Enemy Attacking");
+                currentState = enemyAttackingState;
                 break;
             }
         }
@@ -69,16 +75,18 @@ public class EnemyStateManager : MonoBehaviour
     }
 
     IEnumerator startPatroling(){
+        Debug.Log("Enter Start Patroling");
         yield return new WaitForSeconds(5f);
-        changeState(EnemyStateType.Patroling);
+        Debug.Log("Exit Start Patroling");
+        changeState(enemyPatrollingState);
     }
 
-    bool collisionDetection(float radius, EnemyStateType enemyState){
+    bool collisionDetection(float radius, EnemyState enemyState){
         Collider[] attackColliders = Physics.OverlapSphere(transform.position, radius);
         if(attackColliders.Length > 0){
             for(int i=0; i<attackColliders.Length; i++){
                 if(attackColliders[i].GetComponent<TankView>() != null){
-                    if(currentStateType != enemyState){
+                    if(currentState.stateType != enemyState.stateType){
                         changeState(enemyState);
                         this.radius = radius;
                     }
@@ -90,11 +98,11 @@ public class EnemyStateManager : MonoBehaviour
     }
 
     void detectObjectNearByObject(){
-        if( collisionDetection(attackRadius, EnemyStateType.Attacking)) return;
-        if( collisionDetection(chaseRadius, EnemyStateType.Chasing)) return;
+        if( collisionDetection(attackRadius, enemyAttackingState)) return;
+        if( collisionDetection(chaseRadius, enemyChasingState)) return;
         this.radius = 0;
-        if(currentStateType != EnemyStateType.Idel && currentStateType != EnemyStateType.Patroling){
-            changeState(EnemyStateType.Patroling);
+        if(currentState.stateType != EnemyStateType.Idel && currentState.stateType != EnemyStateType.Patroling){
+            changeState(enemyPatrollingState);
         }
     }
 

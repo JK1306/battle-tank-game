@@ -1,6 +1,6 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
+// [System.Serializable]
 public class EnemyAttackingState : EnemyState
 {
     Transform target;
@@ -12,6 +12,7 @@ public class EnemyAttackingState : EnemyState
     public EnemyAttackingState(EnemyModel enemyModel, EnemyView enemyView) : base(enemyModel, enemyView)
     {
         attackStateEnabled = false;
+        this.stateType = EnemyStateType.Attacking;
     }
 
     public override void OnEnterState()

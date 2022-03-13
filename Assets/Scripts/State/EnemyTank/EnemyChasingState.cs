@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 
+// [System.Serializable]
 public class EnemyChasingState : EnemyState
 {
     Transform target;
     float detectRadius;
 
     public EnemyChasingState(EnemyModel enemyModel, EnemyView enemyView) : base(enemyModel, enemyView)
-    {}
+    {
+        this.stateType = EnemyStateType.Chasing;
+    }
 
     public override void OnEnterState(){
         base.OnEnterState();
