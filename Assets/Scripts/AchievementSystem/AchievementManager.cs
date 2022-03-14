@@ -9,7 +9,7 @@ public class AchievementManager : SingletonBehaviour<AchievementManager>
     private void Start(){
         achievementScriptableObject.Subscribe();
         Achievement.CompletedAchievement += displayAchievement;
-        Debug.Log("Subscribed to CompletedAchievement");
+        // Debug.Log("Subscribed to CompletedAchievement");
     }
 
     private void OnDisable() {
@@ -19,7 +19,7 @@ public class AchievementManager : SingletonBehaviour<AchievementManager>
     
     void displayAchievement(Achievement achievement){
         StartCoroutine(displayMessage(achievement.getMessage()));
-        Debug.Log("UnSubscribed to CompletedAchievement");
+        // Debug.Log("UnSubscribed to CompletedAchievement");
     }
 
     IEnumerator displayMessage(string msg){
