@@ -1,11 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+// [System.Serializable]
 public class EnemyChasingState : EnemyState
 {
     Transform target;
     float detectRadius;
+
+    public EnemyChasingState(EnemyModel enemyModel, EnemyView enemyView) : base(enemyModel, enemyView)
+    {
+        this.stateType = EnemyStateType.Chasing;
+    }
+
+    public override void OnEnterState(){
+        base.OnEnterState();
+    }
 
     public override void Tick(float chaseRadius){
         this.detectRadius = chaseRadius;
@@ -15,13 +23,13 @@ public class EnemyChasingState : EnemyState
     }
 
     void tankMovement(){
-        if(Vector3.Distance(transform.position, target.position) > 4f){
-            transform.position = Vector3.MoveTowards(transform.position, target.position, this.enemyModel.movementSpeed * Time.deltaTime);
+        if(Vector3.Distance(this.enemyView.transform.position, target.position) > 4f){
+            this.enemyView.transform.position = Vector3.MoveTowards(this.enemyView.transform.position, target.position, this.enemyModel.movementSpeed * Time.deltaTime);
         }
     }
 
     void detectObjectNearBy(){
-        Collider[] colliders = Physics.OverlapSphere(transform.position, this.detectRadius);
+        Collider[] colliders = Physics.OverlapSphere(this.enemyView.transform.position, this.detectRadius);
         if(colliders.Length > 0){
             for(int i=0; i<colliders.Length; i++){
                 if(colliders[i].GetComponent<TankView>() != null){
@@ -33,7 +41,7 @@ public class EnemyChasingState : EnemyState
     }
 
     void tankRotation(){
-        transform.LookAt(target);
+        this.enemyView.transform.LookAt(target);
     }
 
 }

@@ -1,19 +1,23 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
+// [System.Serializable]
 public class EnemyAttackingState : EnemyState
 {
     Transform target;
     float radius;
-    EnemyView enemyView;
     float waitTime = 7f;
     float cloak=0f;
-    bool attackStateEnabled = false;
+    bool attackStateEnabled;
 
-    public override void OnEnterState(EnemyModel enemyModel)
+    public EnemyAttackingState(EnemyModel enemyModel, EnemyView enemyView) : base(enemyModel, enemyView)
     {
-        base.OnEnterState(enemyModel);
-        enemyView = GetComponent<EnemyView>();
+        attackStateEnabled = false;
+        this.stateType = EnemyStateType.Attacking;
+    }
+
+    public override void OnEnterState()
+    {
+        base.OnEnterState();
     }
 
     public override void Tick(float chaseRadius){
@@ -25,20 +29,15 @@ public class EnemyAttackingState : EnemyState
 
     void firePlayer(){
         if(cloak >= waitTime || !attackStateEnabled){
-            enemyView.fireShell();
+            this.enemyView.fireShell();
             cloak = 0f;
             attackStateEnabled = true;
         }
         cloak += 0.1f;
-        // StartCoroutine(spawnBullet());
-    }
-
-    IEnumerator spawnBullet(){
-        yield return new WaitForSeconds(2f);
     }
 
     void detectObjectNearBy(){
-        Collider[] colliders = Physics.OverlapSphere(transform.position, this.radius);
+        Collider[] colliders = Physics.OverlapSphere(this.enemyView.transform.position, this.radius);
         if(colliders.Length > 0){
             for(int i=0; i<colliders.Length; i++){
                 if(colliders[i].GetComponent<TankView>() != null){
@@ -50,6 +49,6 @@ public class EnemyAttackingState : EnemyState
     }
 
     void tankRotation(){
-        transform.LookAt(target);
+        this.enemyView.transform.LookAt(target);
     }
 }

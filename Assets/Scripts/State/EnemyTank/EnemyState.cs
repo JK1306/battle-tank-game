@@ -1,20 +1,22 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class EnemyState : MonoBehaviour
+[System.Serializable]
+public class EnemyState
 {
-    protected EnemyModel enemyModel;
-    public virtual void OnEnterState(EnemyModel enemyModel)
-    {
-        this.enemyModel = enemyModel;
-        this.enabled = true;
-    }
+    public EnemyModel enemyModel;
+    public EnemyView enemyView;
+    [SerializeField]
+    public EnemyStateType stateType {get; protected set;}
 
-    public virtual void OnExitState()
-    {
-        this.enabled = false;
+    public EnemyState(EnemyModel enemyModel, EnemyView enemyView){
+        this.enemyModel = enemyModel;
+        this.enemyView = enemyView;
     }
+    public virtual void OnEnterState(){}
+
+    public virtual void OnExitState(){}
 
     public virtual void Tick(float target=0f){}
-
-    private void Update() {}
 }

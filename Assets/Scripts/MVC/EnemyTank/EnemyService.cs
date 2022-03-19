@@ -7,6 +7,7 @@ public class EnemyService : SingletonBehaviour<EnemyService>
 {
     public EnemyScriptableObjectsMaster enemyScriptableObjectsMaster;
     public Transform[] patrolingPoints;
+    public event Action enemyDeathNotification;
     EnemyModel enemyModel;
     EnemyController enemyController;
 
@@ -20,5 +21,9 @@ public class EnemyService : SingletonBehaviour<EnemyService>
 
     public void takeDamage(float damagePower){
         enemyController.reduceHealth(damagePower);
+    }
+
+    public void notifyOnEnemyDeath(){
+        enemyDeathNotification?.Invoke();
     }
 }
