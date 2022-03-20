@@ -18,10 +18,14 @@ MonoBehaviour:
     lastType: 1
     achievement:
       id: 0
-  - achievementType: 4
-    lastType: 4
+  - achievementType: 1
+    lastType: 1
     achievement:
       id: 1
+  - achievementType: 1
+    lastType: 1
+    achievement:
+      id: 2
   references:
     version: 1
     00000000:
@@ -29,6 +33,10 @@ MonoBehaviour:
       data:
         noOfBullets: 2
     00000001:
-      type: {class: Player_Traveled, ns: , asm: Assembly-CSharp}
+      type: {class: Fire_N_Bullets, ns: , asm: Assembly-CSharp}
       data:
-        distanceCover: 6
+        noOfBullets: 4
+    00000002:
+      type: {class: Fire_N_Bullets, ns: , asm: Assembly-CSharp}
+      data:
+        noOfBullets: 3
