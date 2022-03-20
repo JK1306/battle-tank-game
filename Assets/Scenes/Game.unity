@@ -274,6 +274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 942980611}
   - component: {fileID: 942980612}
+  - component: {fileID: 942980613}
   m_Layer: 0
   m_Name: BulletService
   m_TagString: Untagged
@@ -309,6 +310,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletScriptableObjectMaster: {fileID: 11400000, guid: 346ebf31ab5020d489cd1597478ac97b,
     type: 2}
+--- !u!114 &942980613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942980610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bba5788ed6f614c4a83e854a2017f7bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1158996493
 PrefabInstance:
   m_ObjectHideFlags: 0

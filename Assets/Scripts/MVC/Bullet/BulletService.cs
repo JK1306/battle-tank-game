@@ -6,6 +6,10 @@ public class BulletService : SingletonBehaviour<BulletService>
 {
     public BulletScriptableObjectMaster bulletScriptableObjectMaster;
     BulletController bulletController;
+    BulletPoolingService bulletPoolingService;
+    private void Start() {
+        bulletPoolingService = GetComponent<BulletPoolingService>();
+    }
     public void fireBullet(BulletType bulletType, Transform firePosition, BulletParent bulletParent){
         int i=0;
         for(; i<bulletScriptableObjectMaster.bulletScriptableObjects.Length; i++){
@@ -13,7 +17,12 @@ public class BulletService : SingletonBehaviour<BulletService>
                 break;
             }
         }
-        bulletController = new BulletController(bulletScriptableObjectMaster.bulletView, bulletScriptableObjectMaster.bulletScriptableObjects[i], firePosition, bulletParent);
+        bulletController = bulletPoolingService.GetBulletController(bulletScriptableObjectMaster.bulletView, bulletScriptableObjectMaster.bulletScriptableObjects[i], firePosition, bulletParent);
+        // bulletController = new BulletController(bulletScriptableObjectMaster.bulletView, bulletScriptableObjectMaster.bulletScriptableObjects[i], firePosition, bulletParent);
         bulletController.triggerBullet();
+    }
+
+    public void ReturnBullet(BulletController bulletController){
+        bulletPoolingService.ReturnObject(bulletController);
     }
 }
