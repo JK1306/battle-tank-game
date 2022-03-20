@@ -8,11 +8,18 @@ public class BulletController
     BulletModel bulletModel;
     BulletView bulletView;
     ParticleSystem explosion;
+    Transform spawnPosition;
     public BulletController(BulletView bulletView, BulletScriptableObject bulletScriptableObject, Transform instantiatePosition, BulletParent bulletParent){
         this.bulletModel = new BulletModel(bulletScriptableObject, bulletParent);
+        this.spawnPosition = instantiatePosition;
         this.bulletView = GameObject.Instantiate<BulletView>(bulletView, instantiatePosition.position, instantiatePosition.rotation);
         this.bulletView.setupController(this);
         this.bulletView.applyMaterial(bulletModel.materialToApply);
+    }
+
+    public void SpawnBullet(Transform spawnPosition, BulletParent bulletParent){
+        bulletModel.SetBulletParent(bulletParent);
+        this.bulletView.SetPosition(spawnPosition);
     }
 
     public void triggerBullet(){
@@ -39,11 +46,21 @@ public class BulletController
     }
 
     public async void playBulletShellExplosion(Vector3 particalSpawnPosition){
-        GameObject.Destroy(this.bulletView.gameObject);
+        // GameObject.Destroy(this.bulletView.gameObject);
+        // BulletPoolingService.Instance.ReturnObject(this);
+        BulletService.Instance.ReturnBullet(this);
         this.explosion = GameObject.Instantiate(bulletModel.shellExplosionPartical, particalSpawnPosition, Quaternion.identity);
         this.explosion.Play();
         await waitForSec(0.3f);
         destroyShell();
+    }
+
+    public void disableObject(){
+        this.bulletView.disable();
+    }
+
+    public void enableObject(){
+        this.bulletView.enable();
     }
 
     public void destroyShell(){

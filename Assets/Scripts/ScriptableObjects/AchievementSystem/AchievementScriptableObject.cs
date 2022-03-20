@@ -9,6 +9,7 @@ public class AchievementScriptableObject : ScriptableObject {
     bool awakeExe=false;
 
     private void Awake() {
+        Debug.Log("Awake Executed..");
         awakeExe = true;
         if(achievements == null){
             length = 0;
@@ -19,8 +20,9 @@ public class AchievementScriptableObject : ScriptableObject {
     }
 
     private void OnValidate() {
+        Debug.Log("OnValidate Executed..");
         // displayAchievement();
-        if(!awakeExe) return;
+        if(length<=0) return;
         if(length < achievements.Length){
             // displayAchievement(achievements[length]);
             achievements[length] = new AchievementBlock();
