@@ -19,6 +19,10 @@ public class BulletModel
         this.materialToApply = bulletScriptableObject.material;
         this.shellExplosionPartical = bulletScriptableObject.shellExplosion;
     }
+
+    public void SetBulletParent(BulletParent bulletParent){
+        this.bulletParent = bulletParent;
+    }
 }
 
 public enum BulletType{

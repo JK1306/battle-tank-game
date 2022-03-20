@@ -17,7 +17,8 @@ public class BulletController
         this.bulletView.applyMaterial(bulletModel.materialToApply);
     }
 
-    public void SpawnBullet(){
+    public void SpawnBullet(Transform spawnPosition, BulletParent bulletParent){
+        bulletModel.SetBulletParent(bulletParent);
         this.bulletView.SetPosition(spawnPosition);
     }
 
@@ -60,7 +61,6 @@ public class BulletController
 
     public void enableObject(){
         this.bulletView.enable();
-        SpawnBullet();
     }
 
     public void destroyShell(){

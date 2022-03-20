@@ -16,6 +16,7 @@ public class BulletPoolingService : PoolingService<BulletController>
         this.bulletParent = bulletParent;
         BulletController bulletController = GetObject();
         bulletController.enableObject();
+        bulletController.SpawnBullet(firePosition, bulletParent);
         return bulletController;
     }
 
